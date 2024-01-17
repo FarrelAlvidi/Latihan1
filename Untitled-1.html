@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg " style="background-color: rgb(6, 92, 150);" data-bs-theme="dark"> 
+    <div class="container-fluid">
+
+      <a class="navbar-brand fw-bold mx-auto p-2" href="#" >Muhammad Farrel Alvidi</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </div> -->
+      </div>
+    </div>
+  </nav>
+<!-- Navbar End -->
+
+<!-- Container Start -->
+
+<div class="container mt-3" style="background-color: aquamarine;">
+    <!-- <hr> -->
+    <h3 class="display-6">Contoh Collapse 1</h3>
+
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-danger" data-bs-toggle="collapse" href="#aufa" role="button" aria-expanded="false" aria-controls="collapseExample">
+          Aufa
+        </a>
+        <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#gufron" aria-expanded="false" aria-controls="collapseExample">
+          Gufron
+        </button>
+        <a class="btn btn-danger" data-bs-toggle="collapse" href="#kafka" role="button" aria-expanded="false" aria-controls="collapseExample">
+            Kafka
+          </a>
+          <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#fayyadh" aria-expanded="false" aria-controls="collapseExample">
+            Fayyadh
+          </button>
+      </p>
+      <div class="collapse pb-3" id="aufa">
+        <div class="card card-body">
+          Aufa Irvan Adli
+        </div>
+      </div>
+      <div class="collapse pb-3" id="gufron">
+        <div class="card card-body">
+          Gufron Wicaksono
+        </div>
+      </div>
+      <div class="collapse pb-3" id="kafka">
+        <div class="card card-body">
+          Kafka Al Faras
+        </div>
+      </div>
+      <div class="collapse pb-3" id="fayyadh">
+        <div class="card card-body">
+          Fayyadh Alkatiri
+        </div>
+      </div>
+
+  </div>
+  <div class="container mt-5">
+
+    <h3 class="display-6">Contoh Collapse 2</h3>
+
+    <p class="d-inline-flex gap-1">
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Element 1</a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Element 2</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample2">Element 3</button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body">
+              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body">
+              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body">
+                Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-5">
+    <h3 class="display-6">Contoh Collapse 3</h3>
+    <div class="container text-center">
+        <div class="row row-cols-2">
+          <div class="col"><div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div></div>
+          <div class="col">
+            <div class="accordion" id="accordionEx">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#TKJ" aria-expanded="true" aria-controls="collapseOne">
+                      Teknik Jaringan Komputer
+                    </button>
+                  </h2>
+                  <div id="TKJ" class="accordion-collapse collapse show" data-bs-parent="#accordionEx">
+                    <div class="accordion-body">
+                        Komputer ataupun laptop yang kita pegang ini erat kaitannya dengan Jurusan Teknik Komputer dan Jaringan (TKJ). Jurusan TKJ adalah satu jurusan yang mempelajari seluruh seluk beluk komputer dan jaringannya. Secara garis besar, jurusan ini akan mengajarkan terkait perakitan, pemasangan, perbaikan, dan jaringan komputer.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#RPL" aria-expanded="false" aria-controls="collapseTwo">
+                      Rekayasa Perangkat Lunak
+                    </button>
+                  </h2>
+                  <div id="RPL" class="accordion-collapse collapse" data-bs-parent="#accordionEx">
+                    <div class="accordion-body">
+                        Rekayasa Perangkat Lunak atau biasa disingkat dengan RPL adalah salah satu bidang profesi dan juga mata pelajaran yang mempelajari tentang pengembangan perangkat-perangkat lunak termasuk dalam hal pembuatannya, pemeliharaan hingga manajemen organisasi dan manajemen kualitasnya.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#DKV" aria-expanded="false" aria-controls="collapseThree">
+                      Desain Komunikasi Visual
+                    </button>
+                  </h2>
+                  <div id="DKV" class="accordion-collapse collapse" data-bs-parent="#accordionEx">
+                    <div class="accordion-body">
+                        DKV merupakan kombinasi antara seni, teknologi, dan komunikasi. Mahasiswa akan memperoleh berbagai keterampilan, termasuk desain grafis, ilustrasi, fotografi, animasi, desain web, dan masih banyak lagi. Keahlian ini membuat lulusan DKV menjadi desainer serba bisa dan lebih siap menghadapi tantangan profesional.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="container mt-5">
+    <h3 class="display-6">Tabel Siswa XRPL2</h3>
+
+    <table class="table">
+        <thead>
+          <tr >
+            <th scope="col" style="background-color: aqua;">No</th>
+            <th scope="col" style="background-color: aqua;">Name</th>
+            <th scope="col" style="background-color: aqua;">Alamat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Kafka</td>
+            <td>New york</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Rashy</td>
+            <td>Mesir</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Raevan</td>
+            <td>Inggris</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Abdan</td>
+            <td>Indonesia</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Ardhika</td>
+            <td>Malaysia</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+  
+
+<!-- Container End -->
+
+
+
+
+
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
